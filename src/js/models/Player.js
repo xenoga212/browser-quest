@@ -8,7 +8,10 @@ export default class Player {
             magic: 0,
             defense: 0,
             dexterity: 0,
-            health: 10
+            health: 10,
+            level: 0,
+            exp: 0,
+            expForNextLevel: 0
         }
     }
 }
