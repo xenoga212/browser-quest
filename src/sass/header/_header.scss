@@ -1,0 +1,14 @@
+.title {
+
+
+    &__header {
+        font-size: 6.2rem;
+        display: flex;
+        justify-content: center;
+        max-width: 50%;
+        margin: auto;
+        margin-bottom: 14%;
+        box-shadow: $title-box-shadow;
+    }
+    
+}

@@ -1,0 +1,18 @@
+.btn {
+    &--start {
+        padding: $btn-start-padding;
+        font-size: $btn-start-font-size;
+        display: flex;
+        max-width: $btn-start-max-width;
+        max-height: $btn-start-max-height;
+        margin: auto;
+        transition-property: background;
+        transition-duration: 4s;
+
+        &:hover {
+            cursor: pointer;
+            background: $color-red;
+            color: $color-white;
+        }
+    }
+}
