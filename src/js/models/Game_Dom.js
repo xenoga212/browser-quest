@@ -29,10 +29,14 @@ function introducePlayer() {
         } else if (childNodes[i].classList.contains('player-greet__paragraph-3')) {
 
             childNodes[i].classList.add('player-greet__paragraph-3--fade-in-3');
-            
         }
-       
     }
-    
-   
+}
+
+// next button after player clicks on start
+
+export function nextBtn() {
+    const playerSection = document.querySelector('.player-greet__text');
+    playerSection.style.display = 'none';
+    console.log('clicked');
 }

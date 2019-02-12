@@ -72,7 +72,7 @@ html {
     color: #fff; }
 
 .player-greet__button-next {
-  width: 20%;
+  max-width: 20%;
   margin: auto;
   padding: 3rem;
   background: #065535;
@@ -99,13 +99,22 @@ html {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
+.player-info__btn-submit {
+  padding: 3rem;
+  background: #065535;
+  color: #fff;
+  max-width: 23%;
+  font-size: 3rem;
+  margin-left: 27rem;
+  margin-top: 7rem; }
+
 .player-greet__text {
   display: flex;
   flex-direction: column;
   margin-top: 19rem; }
   .player-greet__text > p {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     line-height: 1.5;
     font-size: 6.7rem; }
@@ -206,6 +215,27 @@ html {
     margin-right: .5rem; }
   100% {
     margin-right: 0; } }
+
+.player-info {
+  display: flex;
+  margin-top: 27rem; }
+  .player-info__form {
+    margin: 0 auto; }
+  .player-info__label {
+    margin: 0 auto;
+    font-size: 4rem; }
+  .player-info__input-name {
+    padding: 2rem;
+    font-size: 3rem; }
+  .player-info__form--drop-down {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem; }
+  .player-info__player-class {
+    font-size: 3rem; }
+  .player-info__player-class-select {
+    padding: 3rem;
+    font-size: 3rem; }
 
 .title__header {
   font-size: 6.2rem;

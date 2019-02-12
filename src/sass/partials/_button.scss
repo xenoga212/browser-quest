@@ -19,7 +19,7 @@
 }
 
 .player-greet__button-next {
-    width: 20%;
+    max-width: 20%;
     margin: auto;
     padding: 3rem;
     background: #065535;
@@ -41,4 +41,14 @@
             }
         }
     }
+}
+
+.player-info__btn-submit {
+    padding: 3rem;
+    background: #065535;
+    color: #fff;
+    max-width: 23%;
+    font-size: 3rem;
+    margin-left: 27rem;
+    margin-top: 7rem;
 }
