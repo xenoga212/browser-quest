@@ -6,6 +6,7 @@
         max-width: $btn-start-max-width;
         max-height: $btn-start-max-height;
         margin: auto;
+        padding: 3rem;
         transition-property: background;
         transition-duration: 4s;
 
@@ -13,6 +14,31 @@
             cursor: pointer;
             background: $color-red;
             color: $color-white;
+        }
+    }
+}
+
+.player-greet__button-next {
+    width: 20%;
+    margin: auto;
+    padding: 3rem;
+    background: #065535;
+    color: #fff;
+    font-size: 4.3rem;
+
+    &:hover {
+        background: #008000;
+
+        animation: grow-shrink 1s forwards ease infinite;
+
+        @keyframes grow-shrink {
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
     }
 }

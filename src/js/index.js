@@ -1,4 +1,5 @@
 console.log('Main app working...');
+import { startGame } from './models/Game_Dom';
 import Player from './models/Player';
 import Warrior from './models/Warrior';
 import Ranger from './models/Ranger';
@@ -8,10 +9,7 @@ import Mage from './models/Mage';
 // grab start btn element and add click event listener
 const startBtn = document.querySelector('.btn--start');
 
-startBtn.addEventListener('click', function() {
-    console.log('Begin game');
-});
-
+startBtn.addEventListener('click', startGame);
 
 
 

@@ -63,12 +63,149 @@ html {
   max-width: 20%;
   max-height: 20%;
   margin: auto;
+  padding: 3rem;
   transition-property: background;
   transition-duration: 4s; }
   .btn--start:hover {
     cursor: pointer;
     background: #FF0000;
     color: #fff; }
+
+.player-greet__button-next {
+  width: 20%;
+  margin: auto;
+  padding: 3rem;
+  background: #065535;
+  color: #fff;
+  font-size: 4.3rem; }
+  .player-greet__button-next:hover {
+    background: #008000;
+    -webkit-animation: grow-shrink 1s forwards ease infinite;
+            animation: grow-shrink 1s forwards ease infinite; }
+
+@-webkit-keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+.player-greet__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 19rem; }
+  .player-greet__text > p {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 6.7rem; }
+
+.player-greet__paragraph-1 {
+  opacity: 0; }
+  .player-greet__paragraph-1--fade-in-1 {
+    -webkit-animation: fade-in 4s forwards ease;
+            animation: fade-in 4s forwards ease; }
+
+@-webkit-keyframes fade-in {
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+.player-greet__paragraph-2 {
+  opacity: 0; }
+  .player-greet__paragraph-2--fade-in-2 {
+    -webkit-animation: fade-in 6s forwards ease;
+            animation: fade-in 6s forwards ease; }
+
+@keyframes fade-in {
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+.player-greet__paragraph-3 {
+  opacity: 0;
+  margin-right: 0; }
+  .player-greet__paragraph-3--fade-in-3 {
+    -webkit-animation: fade-in 8s forwards ease-out;
+            animation: fade-in 8s forwards ease-out; }
+
+@keyframes fade-in {
+  99% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+  .player-greet__paragraph-3--period-1 {
+    -webkit-animation: period-1 5s forwards ease;
+            animation: period-1 5s forwards ease; }
+
+@-webkit-keyframes period-1 {
+  50% {
+    margin-right: 3rem; }
+  100% {
+    margin-right: 0; } }
+
+@keyframes period-1 {
+  50% {
+    margin-right: 3rem; }
+  100% {
+    margin-right: 0; } }
+  .player-greet__paragraph-3--period-2 {
+    -webkit-animation: period-2 8s forwards ease;
+            animation: period-2 8s forwards ease; }
+
+@-webkit-keyframes period-2 {
+  50% {
+    margin-right: 2rem; }
+  100% {
+    margin-right: 0; } }
+
+@keyframes period-2 {
+  50% {
+    margin-right: 2rem; }
+  100% {
+    margin-right: 0; } }
+  .player-greet__paragraph-3--period-3 {
+    -webkit-animation: period-3 8s forwards ease;
+            animation: period-3 8s forwards ease; }
+
+@-webkit-keyframes period-3 {
+  50% {
+    margin-right: 1rem; }
+  100% {
+    margin-right: 0; } }
+
+@keyframes period-3 {
+  50% {
+    margin-right: 1rem; }
+  100% {
+    margin-right: 0; } }
+  .player-greet__paragraph-3--question-mark {
+    -webkit-animation: period-3 10s forwards ease;
+            animation: period-3 10s forwards ease; }
+
+@keyframes period-3 {
+  50% {
+    margin-right: .5rem; }
+  100% {
+    margin-right: 0; } }
 
 .title__header {
   font-size: 6.2rem;
