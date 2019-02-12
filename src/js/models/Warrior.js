@@ -1,4 +1,5 @@
 import Player from './Player';
+console.log('Warrior model working...');
 
 export default class Warrior extends Player {
     constructor(name, specialty) {
