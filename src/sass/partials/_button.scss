@@ -51,4 +51,20 @@
     font-size: 3rem;
     margin-left: 27rem;
     margin-top: 7rem;
+
+    &:hover {
+        background: #008000;
+
+        animation: grow-shrink 1s forwards ease infinite;
+
+        @keyframes grow-shrink {
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
 }

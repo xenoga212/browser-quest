@@ -11,6 +11,7 @@ export default class Mage extends Player {
         this.stats.health = 10;
         this.stats.level = 1;
         this.stats.exp = 0;
+        this.stats.expForNextLevel = this.stats.level * (2 * Math.sqrt(500)).toFixed(0);
         this.skills = [
             {
                 skill: 'Fireball',

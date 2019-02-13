@@ -107,6 +107,18 @@ html {
   font-size: 3rem;
   margin-left: 27rem;
   margin-top: 7rem; }
+  .player-info__btn-submit:hover {
+    background: #008000;
+    -webkit-animation: grow-shrink 1s forwards ease infinite;
+            animation: grow-shrink 1s forwards ease infinite; }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 .player-greet__text {
   display: flex;
@@ -217,7 +229,7 @@ html {
     margin-right: 0; } }
 
 .player-info {
-  display: flex;
+  display: none;
   margin-top: 27rem; }
   .player-info__form {
     margin: 0 auto; }

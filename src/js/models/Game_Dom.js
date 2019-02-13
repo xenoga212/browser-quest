@@ -1,3 +1,8 @@
+import Player from './Player';
+import Warrior from './Warrior';
+import Ranger from './Ranger';
+import Mage from './Mage';
+
 export function startGame() {
     fadeDefaultScreen();
     
@@ -37,6 +42,47 @@ function introducePlayer() {
 
 export function nextBtn() {
     const playerSection = document.querySelector('.player-greet__text');
+    const playerInfoSection = document.querySelector('.player-info');
+
+    // get rid of the introductory text when the player clicks on next
     playerSection.style.display = 'none';
-    console.log('clicked');
+
+    // reveal form for player to type down their player name and class 
+    playerInfoSection.style.display = 'flex';
+}
+
+export function finalizeBtn(e) {
+    e.preventDefault();
+    createNewPlayer();
+ 
+}
+
+// obtain data about player name from input field
+function userNameInput() {
+
+    const playerName = document.querySelector('.player-info__input-name').value;
+
+    return playerName;
+}
+
+// grab the class element that the player selected
+function userClassInput() {
+
+    const playerClass = document.querySelector('.player-info__player-class-select').value;
+    
+    return playerClass;
+}
+
+function createNewPlayer() {
+    let player; 
+
+    //assign class depending on player choice
+    if (userClassInput() === 'Warrior') {
+        player = new Warrior(userNameInput(), userClassInput());
+    } else if (userClassInput() === 'Ranger') {
+        player = new Ranger(userNameInput(), userClassInput());
+    } else if (userClassInput() === 'Mage') {
+        player = new Mage(userNameInput(), userClassInput());
+    }
+
 }
