@@ -1,4 +1,5 @@
 .player-greet {
+    display: none;
     
     &__text {
         display: flex;
@@ -12,6 +13,14 @@
            line-height: 1.5;
            font-size: 6.7rem; 
        }
+    }
+
+    &__player-instruction {
+        font-size: 4rem;
+        margin: auto;
+        max-width: 67%;
+        margin-top: 27rem;
+        display: none;
     }
 }
 

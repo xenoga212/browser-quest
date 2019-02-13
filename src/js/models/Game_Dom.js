@@ -2,6 +2,7 @@ import Player from './Player';
 import Warrior from './Warrior';
 import Ranger from './Ranger';
 import Mage from './Mage';
+import { create } from 'domain';
 
 export function startGame() {
     fadeDefaultScreen();
@@ -17,6 +18,8 @@ function fadeDefaultScreen() {
 
 function introducePlayer() {
     const playerSection = document.querySelector('.player-greet__text');
+    const playerGreet = document.querySelector('.player-greet');
+    playerGreet.style.display = 'block';
 
     // grab the children inside of the player-greet__text class
     let childNodes = playerSection.children;
@@ -54,6 +57,11 @@ export function nextBtn() {
 export function finalizeBtn(e) {
     e.preventDefault();
     createNewPlayer();
+
+    const playerInfoSection = document.querySelector('.player-info');
+    playerInfoSection.style.display = 'none';
+    playerInstruction();
+    removePlayerInstruction();
  
 }
 
@@ -84,5 +92,29 @@ function createNewPlayer() {
     } else if (userClassInput() === 'Mage') {
         player = new Mage(userNameInput(), userClassInput());
     }
+    
 
+}
+
+function playerInstruction() {
+    const playerGreetEle = document.querySelector('.player-greet__player-instruction');
+    playerGreetEle.style.display = 'block';
+
+    let createParagraph = document.createElement('p');
+
+    createParagraph.textContent = `
+    ${userNameInput()} Is your name?
+    Hmm...I see that you are a ${userClassInput()}. Maybe we can escape this tower at last. Climb up the tower and fight against the mobs to claim freedom. C'mon! Let's get out!
+    `;
+
+
+    // append paragraph to beginning of playerGreet
+    playerGreetEle.insertBefore(createParagraph, playerGreetEle.childNodes[0]);
+}
+
+export function removePlayerInstruction() {
+    const playerGreetEle = document.querySelector('.player-greet');
+
+    playerGreetEle.removeChild(playerGreetEle.lastChild);
+    
 }

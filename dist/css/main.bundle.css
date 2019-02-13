@@ -71,6 +71,10 @@ html {
     background: #FF0000;
     color: #fff; }
 
+.btn--text {
+  padding-left: 4rem;
+  padding-right: 4rem; }
+
 .player-greet__button-next {
   max-width: 20%;
   margin: auto;
@@ -120,16 +124,27 @@ html {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
-.player-greet__text {
-  display: flex;
-  flex-direction: column;
-  margin-top: 19rem; }
-  .player-greet__text > p {
-    height: 100%;
-    max-width: 100%;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 6.7rem; }
+.player-info__btn--next {
+  margin-left: 40%; }
+
+.player-greet {
+  display: none; }
+  .player-greet__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 19rem; }
+    .player-greet__text > p {
+      height: 100%;
+      max-width: 100%;
+      text-align: center;
+      line-height: 1.5;
+      font-size: 6.7rem; }
+  .player-greet__player-instruction {
+    font-size: 4rem;
+    margin: auto;
+    max-width: 67%;
+    margin-top: 27rem;
+    display: none; }
 
 .player-greet__paragraph-1 {
   opacity: 0; }
