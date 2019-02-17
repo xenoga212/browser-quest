@@ -2,6 +2,7 @@ import Player from './Player';
 import Warrior from './Warrior';
 import Ranger from './Ranger';
 import Mage from './Mage';
+import { playerInstruction } from '../views/playerInstruction';
 import { create } from 'domain';
 
 export function startGame() {
@@ -96,25 +97,15 @@ function createNewPlayer() {
 
 }
 
-function playerInstruction() {
-    const playerGreetEle = document.querySelector('.player-greet__player-instruction');
-    playerGreetEle.style.display = 'block';
-
-    let createParagraph = document.createElement('p');
-
-    createParagraph.textContent = `
-    ${userNameInput()} Is your name?
-    Hmm...I see that you are a ${userClassInput()}. Maybe we can escape this tower at last. Climb up the tower and fight against the mobs to claim freedom. C'mon! Let's get out!
-    `;
-
-
-    // append paragraph to beginning of playerGreet
-    playerGreetEle.insertBefore(createParagraph, playerGreetEle.childNodes[0]);
-}
 
 export function removePlayerInstruction() {
     const playerGreetEle = document.querySelector('.player-greet');
 
     playerGreetEle.removeChild(playerGreetEle.lastChild);
     
+}
+
+export {
+    userNameInput,
+    userClassInput
 }
