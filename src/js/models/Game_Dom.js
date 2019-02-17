@@ -93,16 +93,12 @@ function createNewPlayer() {
     } else if (userClassInput() === 'Mage') {
         player = new Mage(userNameInput(), userClassInput());
     }
-    
-
 }
-
 
 export function removePlayerInstruction() {
     const playerGreetEle = document.querySelector('.player-greet');
 
     playerGreetEle.removeChild(playerGreetEle.lastChild);
-    
 }
 
 export {

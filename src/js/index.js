@@ -4,7 +4,7 @@ import Player from './models/Player';
 import Warrior from './models/Warrior';
 import Ranger from './models/Ranger';
 import Mage from './models/Mage';
-
+import Monster from './models/Monster';
 
 // grab start btn element and add click event listener
 const startBtn = document.querySelector('.btn--start');
@@ -16,3 +16,5 @@ startBtn.addEventListener('click', startGame);
 playerGreetBtn.addEventListener('click', nextBtn);
 playerInfoForm.addEventListener('submit', finalizeBtn)
 removePlayerIntro.addEventListener('click', removePlayerInstruction);
+
+

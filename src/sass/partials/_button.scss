@@ -77,5 +77,11 @@
 .player-info__btn {
     &--next {
         margin-left: 40%;
+
+        &-link {
+            text-decoration: none;
+            color: #fff;
+        }
     }
+
 }

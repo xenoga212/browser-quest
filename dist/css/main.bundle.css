@@ -126,6 +126,9 @@ html {
 
 .player-info__btn--next {
   margin-left: 40%; }
+  .player-info__btn--next-link {
+    text-decoration: none;
+    color: #fff; }
 
 .player-greet {
   display: none; }
