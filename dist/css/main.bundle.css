@@ -130,6 +130,58 @@ html {
     text-decoration: none;
     color: #fff; }
 
+.player-status__button-box {
+  display: flex;
+  justify-content: space-between; }
+  .player-status__button-box__attack-button {
+    font-size: 5rem;
+    padding: 2rem; }
+    .player-status__button-box__attack-button:hover {
+      background: #008000;
+      color: red;
+      -webkit-animation: grow-shrink 1s forwards ease infinite;
+              animation: grow-shrink 1s forwards ease infinite; }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+  .player-status__button-box__skills-button {
+    font-size: 5rem;
+    padding: 2rem; }
+    .player-status__button-box__skills-button:hover {
+      background: #008000;
+      color: yellow;
+      -webkit-animation: grow-shrink 1s forwards ease infinite;
+              animation: grow-shrink 1s forwards ease infinite; }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+  .player-status__button-box__items-button {
+    font-size: 5rem;
+    padding: 2rem; }
+    .player-status__button-box__items-button:hover {
+      background: #008000;
+      color: white;
+      -webkit-animation: grow-shrink 1s forwards ease infinite;
+              animation: grow-shrink 1s forwards ease infinite; }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
 .player-greet {
   display: none; }
   .player-greet__text {
@@ -266,6 +318,58 @@ html {
   .player-info__player-class-select {
     padding: 3rem;
     font-size: 3rem; }
+
+.player-options__player-list {
+  font-size: 5rem;
+  position: absolute;
+  top: 0;
+  margin-top: 12rem;
+  padding-left: 2rem; }
+  .player-options__player-list__stats:hover {
+    cursor: pointer;
+    color: #008000;
+    -webkit-animation: grow-shrink 1s forwards ease infinite;
+            animation: grow-shrink 1s forwards ease infinite; }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+  .player-options__player-list__items:hover {
+    cursor: pointer;
+    color: #008000;
+    -webkit-animation: grow-shrink 1s forwards ease infinite;
+            animation: grow-shrink 1s forwards ease infinite; }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+.player-options__player-floor-level {
+  font-size: 3.7rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 12rem;
+  padding-right: 2rem; }
+
+.player-status {
+  width: 50%;
+  border: .5rem solid black;
+  padding: 2.8rem;
+  margin-top: 45rem;
+  text-align: center;
+  margin-left: 36rem; }
+  .player-status__combat-info {
+    font-size: 3.4rem;
+    margin-bottom: 3rem; }
 
 .title__header {
   font-size: 6.2rem;

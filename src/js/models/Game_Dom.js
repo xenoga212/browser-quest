@@ -62,7 +62,6 @@ export function finalizeBtn(e) {
     const playerInfoSection = document.querySelector('.player-info');
     playerInfoSection.style.display = 'none';
     playerInstruction();
-    removePlayerInstruction();
  
 }
 
@@ -95,11 +94,7 @@ function createNewPlayer() {
     }
 }
 
-export function removePlayerInstruction() {
-    const playerGreetEle = document.querySelector('.player-greet');
 
-    playerGreetEle.removeChild(playerGreetEle.lastChild);
-}
 
 export {
     userNameInput,

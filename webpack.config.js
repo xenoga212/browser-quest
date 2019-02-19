@@ -47,7 +47,11 @@ const config = {
         new htmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',
-            hash: true
+        }),
+
+        new htmlWebpackPlugin({
+            template: './src/player.html',
+            filename: 'player.html',
         }),
 
         new webpack.LoaderOptionsPlugin({ 

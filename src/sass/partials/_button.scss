@@ -85,3 +85,74 @@
     }
 
 }
+
+.player-status__button-box {
+    display: flex;
+    justify-content: space-between;
+
+    &__attack-button {
+        font-size: 5rem;
+        padding: 2rem;
+
+        &:hover {
+            background: #008000;
+            color: red;
+    
+            animation: grow-shrink 1s forwards ease infinite;
+    
+            @keyframes grow-shrink {
+                50% {
+                    transform: scale(1.2);
+                }
+    
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    &__skills-button {
+        font-size: 5rem;
+        padding: 2rem;
+
+        &:hover {
+            background: #008000;
+            color: yellow;
+    
+            animation: grow-shrink 1s forwards ease infinite;
+    
+            @keyframes grow-shrink {
+                50% {
+                    transform: scale(1.2);
+                }
+    
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    &__items-button {
+        font-size: 5rem;
+        padding: 2rem;
+
+        &:hover {
+            background: #008000;
+            color: white;
+    
+            animation: grow-shrink 1s forwards ease infinite;
+    
+            @keyframes grow-shrink {
+                50% {
+                    transform: scale(1.2);
+                }
+    
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

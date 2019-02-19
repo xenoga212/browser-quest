@@ -1,0 +1,60 @@
+.player-options-container {
+    
+}
+
+.player-options {
+    
+    &__player-list {
+        font-size: 5rem;
+        position: absolute;
+        top: 0;
+        margin-top: 12rem;
+        padding-left: 2rem;
+
+        &__stats {
+
+            &:hover {
+                cursor: pointer;
+                color: #008000;
+                animation: grow-shrink 1s forwards ease infinite;
+
+                @keyframes grow-shrink {
+                    50% {
+                        transform: scale(1.2);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+
+        &__items {
+            &:hover {
+                cursor: pointer;
+                color: #008000;
+                animation: grow-shrink 1s forwards ease infinite;
+
+                @keyframes grow-shrink {
+                    50% {
+                        transform: scale(1.2);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+
+    &__player-floor-level {
+        font-size: 3.7rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 12rem;
+        padding-right: 2rem;
+    }
+}
