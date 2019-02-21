@@ -49,11 +49,6 @@ const config = {
             filename: 'index.html',
         }),
 
-        new htmlWebpackPlugin({
-            template: './src/player.html',
-            filename: 'player.html',
-        }),
-
         new webpack.LoaderOptionsPlugin({ 
             options: {
                 postcss: [

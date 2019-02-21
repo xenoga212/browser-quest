@@ -3,7 +3,8 @@ import Player from './Player';
 export default class Mage extends Player {
     constructor(name, specialty) {
         super(name, specialty);
-        this.mp = 10;
+        this.skillResource = 'MP';
+        this.skillResourceNumber = 10;
         this.stats.strength = 2;
         this.stats.magic = 9;
         this.stats.defense = 3;

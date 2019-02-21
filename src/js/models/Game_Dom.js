@@ -2,19 +2,27 @@ import Player from './Player';
 import Warrior from './Warrior';
 import Ranger from './Ranger';
 import Mage from './Mage';
-import { playerInstruction } from '../views/playerInstruction';
+import { playerInstruction, } from '../views/playerInstruction';
+import { playerViews, playerData } from '../views/playerView';
 import { create } from 'domain';
 
 export function startGame() {
     fadeDefaultScreen();
+
     
 }
 
 // fade text after player clicks start and starts introduction text 
 function fadeDefaultScreen() {
-    const container = document.querySelector('.container');
-    container.style.display = 'none';
+    // const container = document.querySelector('.container');
+    // container.classList.add('container__none');
+
+    const title = document.querySelector('.title');
+    const btn = document.querySelector('.btn');
+    title.style.display = 'none';
+    btn.style.display = 'none';
     introducePlayer();
+    
 }
 
 function introducePlayer() {
@@ -57,12 +65,26 @@ export function nextBtn() {
 
 export function finalizeBtn(e) {
     e.preventDefault();
-    createNewPlayer();
+    createNewPlayer()
+    // playerData(createNewPlayer());
 
     const playerInfoSection = document.querySelector('.player-info');
     playerInfoSection.style.display = 'none';
     playerInstruction();
  
+}
+
+// create function to move entire player-greet__player-instruction top: -99999rem
+export function movePlayerGreet() {
+    const playerGreetDiv = document.querySelector('.player-greet__player-instruction');
+    const playerGreet = document.querySelector('.player-greet');
+    const playerOptionEle = document.querySelector('.player-options-container');
+
+    playerGreet.style.display = 'none';
+    playerGreetDiv.classList.add('player-greet__player-instruction__position');
+    playerOptionEle.classList.add('player-options-container__revert-position');
+
+    playerViews(createNewPlayer());
 }
 
 // obtain data about player name from input field
@@ -92,11 +114,15 @@ function createNewPlayer() {
     } else if (userClassInput() === 'Mage') {
         player = new Mage(userNameInput(), userClassInput());
     }
+    
+    return player;
 }
 
 
 
 export {
     userNameInput,
-    userClassInput
+    userClassInput,
+    createNewPlayer,
+    
 }

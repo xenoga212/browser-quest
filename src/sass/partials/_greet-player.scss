@@ -1,5 +1,6 @@
 .player-greet {
     display: none;
+
     
     &__text {
         display: flex;
@@ -21,6 +22,11 @@
         max-width: 67%;
         margin-top: 27rem;
         display: none;
+
+        &__position {
+            position: absolute;
+            top: -999999999rem;
+        }
     }
 }
 

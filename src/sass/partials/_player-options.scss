@@ -1,5 +1,11 @@
 .player-options-container {
-    
+    position: absolute;
+    top: -99999999rem;
+
+    &__revert-position {
+        position: inherit;
+        
+    }
 }
 
 .player-options {
@@ -57,4 +63,30 @@
         margin-top: 12rem;
         padding-right: 2rem;
     }
+}
+
+
+.player-stats {
+    display: flex;
+    font-size: 3rem;
+    position: absolute;
+    top: 13%;
+    left: 33%;
+    right: 50%;
+    width: 100%;
+    margin-bottom: 2.3rem;
+
+    &__ul {
+        border: 1.3rem solid black;
+        width: 34%;
+        text-align: center;
+        padding-top: 4.3rem;
+        padding-bottom: 4.3rem;
+        line-height: 1.8;
+    }
+}
+
+.player-stats-display {
+    z-index: -1;
+    opacity: 0;
 }

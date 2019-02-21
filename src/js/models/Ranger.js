@@ -4,7 +4,8 @@ console.log('Ranger model working');
 export default class Ranger extends Player {
     constructor(name, specialty) {
         super(name, specialty);
-        this.deadeye = 3;
+        this.skillResource = 'DeadEye';
+        this.skillResourceNumber = 3;
         this.stats.strength = 4;
         this.stats.magic = 3;
         this.stats.defense = 4;

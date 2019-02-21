@@ -4,7 +4,8 @@ console.log('Warrior model working...');
 export default class Warrior extends Player {
     constructor(name, specialty) {
         super(name, specialty);
-        this.rage = 2;
+        this.skillResource = 'Rage';
+        this.skillResourceNumber = 10;
         this.stats.strength = 7;
         this.stats.magic = 3;
         this.stats.defense = 5;
