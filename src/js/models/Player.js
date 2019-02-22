@@ -3,6 +3,7 @@ export default class Player {
     constructor(name, specialty) {
         this.name = name;
         this.specialty = specialty;
+        this.currentFloorLevel = 1;
         this.stats = {
             strength: 0,
             magic: 0,
