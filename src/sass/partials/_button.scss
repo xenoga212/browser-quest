@@ -27,12 +27,12 @@
     max-width: 20%;
     margin: auto;
     padding: 3rem;
-    background: #065535;
-    color: #fff;
+    background: $color-green;
+    color: $color-white;
     font-size: 4.3rem;
 
     &:hover {
-        background: #008000;
+        background: $color-light-green;
 
         animation: grow-shrink 1s forwards ease infinite;
 
@@ -50,15 +50,15 @@
 
 .player-info__btn-submit {
     padding: 3rem;
-    background: #065535;
-    color: #fff;
+    background: $color-green;
+    color: $color-white;
     max-width: 23%;
     font-size: 3rem;
     margin-left: 27rem;
     margin-top: 7rem;
 
     &:hover {
-        background: #008000;
+        background: $color-light-green;
 
         animation: grow-shrink 1s forwards ease infinite;
 
@@ -80,7 +80,7 @@
 
         &-link {
             text-decoration: none;
-            color: #fff;
+            color: $color-white;
         }
     }
 
@@ -103,11 +103,11 @@
 
         &--disable {
             color: #c0c0c0;
-            background-color: #ffffff;
+            background-color: $color-white;
         }
 
         &:hover {
-            background: #008000;
+            background: $color-light-green;
             color: red;
     
             animation: grow-shrink 1s forwards ease infinite;
@@ -130,11 +130,11 @@
 
         &--disable {
             color: #c0c0c0;
-            background-color: #ffffff;
+            background-color: $color-white;
         }
 
         &:hover {
-            background: #008000;
+            background: $color-light-green;
             color: yellow;
     
             animation: grow-shrink 1s forwards ease infinite;
@@ -157,12 +157,12 @@
 
         &--disable {
             color: #c0c0c0;
-            background-color: #ffffff;
+            background-color: $color-white;
         }
 
         &:hover {
-            background: #008000;
-            color: white;
+            background: $color-light-green;
+            color: $color-white;
     
             animation: grow-shrink 1s forwards ease infinite;
     
@@ -190,8 +190,8 @@
 
     &__btn {
         &:hover {
-            background: #008000;
-            color: white;
+            background: $color-light-green;
+            color: $color-white;
     
             animation: grow-shrink 1s forwards ease infinite;
     
@@ -219,7 +219,7 @@
     width: 16%;
 
     &:hover {
-        background: #008000;
+        background: $color-light-green;
         color: white;
 
         animation: grow-shrink 1s forwards ease infinite;

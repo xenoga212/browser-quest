@@ -141,7 +141,7 @@ html {
     padding: 2rem; }
     .player-status__button-box__attack-button--disable {
       color: #c0c0c0;
-      background-color: #ffffff; }
+      background-color: #fff; }
     .player-status__button-box__attack-button:hover {
       background: #008000;
       color: red;
@@ -160,7 +160,7 @@ html {
     padding: 2rem; }
     .player-status__button-box__skills-button--disable {
       color: #c0c0c0;
-      background-color: #ffffff; }
+      background-color: #fff; }
     .player-status__button-box__skills-button:hover {
       background: #008000;
       color: yellow;
@@ -179,10 +179,10 @@ html {
     padding: 2rem; }
     .player-status__button-box__items-button--disable {
       color: #c0c0c0;
-      background-color: #ffffff; }
+      background-color: #fff; }
     .player-status__button-box__items-button:hover {
       background: #008000;
-      color: white;
+      color: #fff;
       -webkit-animation: grow-shrink 1s forwards ease infinite;
               animation: grow-shrink 1s forwards ease infinite; }
 
@@ -204,7 +204,7 @@ html {
   width: 100%; }
   .explore-tower__btn:hover {
     background: #008000;
-    color: white;
+    color: #fff;
     -webkit-animation: grow-shrink 1s forwards ease infinite;
             animation: grow-shrink 1s forwards ease infinite; }
 
