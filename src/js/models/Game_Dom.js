@@ -9,20 +9,15 @@ import { create } from 'domain';
 export function startGame() {
     fadeDefaultScreen();
 
-    
 }
 
 // fade text after player clicks start and starts introduction text 
 function fadeDefaultScreen() {
-    // const container = document.querySelector('.container');
-    // container.classList.add('container__none');
-
     const title = document.querySelector('.title');
     const btn = document.querySelector('.btn');
     title.style.display = 'none';
     btn.style.display = 'none';
     introducePlayer();
-    
 }
 
 function introducePlayer() {
@@ -51,7 +46,6 @@ function introducePlayer() {
 }
 
 // next button after player clicks on start
-
 export function nextBtn() {
     const playerSection = document.querySelector('.player-greet__text');
     const playerInfoSection = document.querySelector('.player-info');
@@ -65,9 +59,8 @@ export function nextBtn() {
 
 export function finalizeBtn(e) {
     e.preventDefault();
+    // create new player after player finalize the name and class they pick
     createNewPlayer()
-    // playerData(createNewPlayer());
-
     const playerInfoSection = document.querySelector('.player-info');
     playerInfoSection.style.display = 'none';
     playerInstruction();
@@ -83,7 +76,7 @@ export function movePlayerGreet() {
     playerGreet.style.display = 'none';
     playerGreetDiv.classList.add('player-greet__player-instruction__position');
     playerOptionEle.classList.add('player-options-container__revert-position');
-
+    
     playerViews(createNewPlayer());
 }
 

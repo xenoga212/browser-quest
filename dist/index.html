@@ -30,8 +30,8 @@
                     <label for="class" class="player-info__player-class">Pick a class:</label>
                     <select name="class" class="player-info__player-class-select">
                         <option>Warrior</option>
-                        <option>Ranger</option>
-                        <option>Mage</option>
+                        <option disabled="disabled">Ranger</option>
+                        <option disabled="disabled">Mage</option>
                     </select>
                 </div>
                 
@@ -58,6 +58,7 @@
         </ul>
     </div>
 
+
     <div class="player-options-container">
         <section class="player-options__player-section">
             <div class="title">
@@ -82,6 +83,12 @@
 
 
         <section class="player-status">
+            <button class="explore-tower">Explore Tower</button>
+            <div class="player-history-box">
+                <ul class="player-history-box__feed">
+                    
+                </ul>
+            </div>
             <div class="player-status__border-box">
                 <ul class="player-status__combat-info">
                     <li>HP: <span class="player-status__combat-info__hp-stats">10</span> </li>
@@ -89,10 +96,10 @@
                     <li></li>
                 </ul>
 
-                <div class="player-status__button-box">
-                    <button class="player-status__button-box__attack-button">Attack</button>
-                    <button class="player-status__button-box__skills-button">Skills</button>
-                    <button class="player-status__button-box__items-button">Items</button>
+                <div class="player-status__button-box player-status__button-box--disable">
+                    <button class="player-status__button-box__attack-button player-status__button-box__attack-button--disable">Attack</button>
+                    <button class="player-status__button-box__skills-button player-status__button-box__skills-button--disable">Skills</button>
+                    <button class="player-status__button-box__items-button player-status__button-box__items-button--disable">Items</button>
                 </div>
             </div>
         </section>

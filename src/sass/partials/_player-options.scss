@@ -69,10 +69,6 @@
 .player-stats {
     display: flex;
     font-size: 3rem;
-    position: absolute;
-    top: 13%;
-    left: 33%;
-    right: 50%;
     width: 100%;
     margin-bottom: 2.3rem;
 
@@ -83,10 +79,14 @@
         padding-top: 4.3rem;
         padding-bottom: 4.3rem;
         line-height: 1.8;
+        position: absolute;
+        top: 17%;
+        left: 33%;
+        right: 50%;
     }
 }
 
 .player-stats-display {
     z-index: -1;
-    opacity: 0;
+    display: none;
 }

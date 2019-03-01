@@ -1,10 +1,12 @@
+
 export default class Monster {
     constructor() {
-        this.monsters = [
+        
+         this.monsters = [
             {
                 name: 'Goblin',
                 level: 1,
-                hp: 3,
+                hp: 30,
                 skills: [
                     {
                         skill: 'stab',
@@ -14,21 +16,9 @@ export default class Monster {
             },
 
             {
-                name: 'Skeleton',
-                level: 1,
-                hp: 3,
-                skills: [
-                    {
-                        skill: 'Slam',
-                        damage: 1 * (2 * Math.sqrt(.34)).toFixed(0)
-                    }
-                ]
-            },
-
-            {
                 name: 'Slime',
                 level: 2,
-                hp: 4,
+                hp: 35,
                 skills: [
                     {
                     skill: 'Whip',
@@ -40,7 +30,7 @@ export default class Monster {
             {
                 name: 'Lizardman',
                 level: 3,
-                hp: 5,
+                hp: 40,
                 skills: [
                     {
                     skill: 'Cut',
@@ -52,7 +42,7 @@ export default class Monster {
             {
                 name: 'Infected Lizardman',
                 level: 5,
-                hp: 7,
+                hp: 45,
                 skills: [
                     {
                         skill: 'Sweep',
@@ -69,7 +59,7 @@ export default class Monster {
             {
                 name: 'Skeleton Mage',
                 level: 6,
-                hp: 6,
+                hp: 50,
                 skills: [
                     {
                         skill: 'Fireball',
@@ -77,7 +67,7 @@ export default class Monster {
                     },
 
                     {
-                        skill: 'Forst',
+                        skill: 'Frost',
                         damage: 6 * (2 * Math.sqrt(.7)).toFixed(0)
                     }
                 ]
@@ -86,7 +76,7 @@ export default class Monster {
             {
                 name: 'Mimic',
                 level: 7,
-                hp: 12,
+                hp: 55,
                 skills: [
                     {
                         name: 'Crunch',
@@ -98,7 +88,7 @@ export default class Monster {
             {
                 name: 'Knight Armor',
                 level: 8,
-                hp: 17,
+                hp: 60,
                 skills: [
                     {
                         name: 'Slash',
@@ -110,7 +100,7 @@ export default class Monster {
             {
                 name: 'The Loyal Bad Guy',
                 level: 9,
-                hp: 20,
+                hp: 65,
                 skills: [
                     {
                         name: 'Twin slash',
@@ -122,7 +112,7 @@ export default class Monster {
             {
                 name: 'Evil Wizard',
                 level: 10,
-                hp: 30,
+                hp: 70,
                 skills: [
                     {
                         name: 'Fire O\' Fury',
@@ -142,5 +132,13 @@ export default class Monster {
             }
 
         ];
+    }
+
+    increaseMonsterClearCount() {
+        this.monstersCleared+= 1;
+    }
+
+    resetMonsterClearCount() {
+        this.monstersCleared = 0;
     }
 }

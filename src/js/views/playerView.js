@@ -1,4 +1,5 @@
-console.log('Player Views');
+import { createNewPlayer } from '../models/Game_Dom';
+import { exploreTowerView, a,  explore, combat, createANewMonster } from '../views/explore-tower'
 
 
 export function playerViews(playerData) {
@@ -14,8 +15,8 @@ export function playerViews(playerData) {
     playerResource.innerHTML = playerData.skillResource;
     playerResourceNumbers.innerHTML = playerData.skillResourceNumber;
 
-    playerStatsViews(playerData);
-    
+    // call the playerStatsView function when a player clicks on the stats button
+    playerStatsViews(playerData);    
 }
 
 function playerStatsViews(playerData) {
@@ -30,7 +31,7 @@ function playerStatsViews(playerData) {
     const playerDefense = document.querySelector('.player-stats__ul__list--defense');
     const playerDexterity = document.querySelector('.player-stats__ul__list--dexterity');
     const playerMagic = document.querySelector('.player-stats__ul__list--magic');
-    const currentFloor = document.querySelector('.player-options__player-floor-level__sub--curent');
+    // const currentFloor = document.querySelector('.player-options__player-floor-level__sub--curent');
 
     playerName.innerHTML = playerData.name;
     playerSpecialty.innerHTML = playerData.specialty;
@@ -42,5 +43,25 @@ function playerStatsViews(playerData) {
     playerDefense.innerHTML = playerData.stats.defense;
     playerDexterity.innerHTML = playerData.stats.dexterity;
     playerMagic.innerHTML = playerData.stats.magic;
-    currentFloor.innerHTML = playerData.currentFloorLevel;
+    // currentFloor.innerHTML = playerData.currentFloorLevel;
+}
+
+
+function exploreTower() {
+    // deconstruct createPlayer
+    const { name } = createNewPlayer();
+
+
+    // call explore
+    explore(name);
+}
+
+function playerAttack() {
+    combat();
+    
+}
+
+export {
+    exploreTower,
+    playerAttack
 }

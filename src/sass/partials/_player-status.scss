@@ -22,3 +22,16 @@
         margin-bottom: 3rem;
     }
 }
+
+.player-history-box {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 11rem;
+    border: 1rem solid black;
+    width: 45%;
+    left: 26%;
+    height: 47vh;
+    text-align: left;
+    overflow: auto;
+    line-height: 1.2;
+}

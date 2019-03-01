@@ -133,9 +133,15 @@ html {
 .player-status__button-box {
   display: flex;
   justify-content: space-between; }
+  .player-status__button-box--disable {
+    cursor: not-allowed;
+    pointer-events: none; }
   .player-status__button-box__attack-button {
     font-size: 5rem;
     padding: 2rem; }
+    .player-status__button-box__attack-button--disable {
+      color: #c0c0c0;
+      background-color: #ffffff; }
     .player-status__button-box__attack-button:hover {
       background: #008000;
       color: red;
@@ -152,6 +158,9 @@ html {
   .player-status__button-box__skills-button {
     font-size: 5rem;
     padding: 2rem; }
+    .player-status__button-box__skills-button--disable {
+      color: #c0c0c0;
+      background-color: #ffffff; }
     .player-status__button-box__skills-button:hover {
       background: #008000;
       color: yellow;
@@ -168,11 +177,59 @@ html {
   .player-status__button-box__items-button {
     font-size: 5rem;
     padding: 2rem; }
+    .player-status__button-box__items-button--disable {
+      color: #c0c0c0;
+      background-color: #ffffff; }
     .player-status__button-box__items-button:hover {
       background: #008000;
       color: white;
       -webkit-animation: grow-shrink 1s forwards ease infinite;
               animation: grow-shrink 1s forwards ease infinite; }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+.explore-tower {
+  display: flex;
+  font-size: 3rem;
+  position: absolute;
+  top: 13%;
+  left: 33%;
+  right: 50%;
+  width: 100%; }
+  .explore-tower__btn:hover {
+    background: #008000;
+    color: white;
+    -webkit-animation: grow-shrink 1s forwards ease infinite;
+            animation: grow-shrink 1s forwards ease infinite; }
+
+@keyframes grow-shrink {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+.explore-tower {
+  padding: 3rem;
+  font-size: 3rem;
+  position: absolute;
+  top: 51rem;
+  left: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  width: 16%; }
+  .explore-tower:hover {
+    background: #008000;
+    color: white;
+    -webkit-animation: grow-shrink 1s forwards ease infinite;
+            animation: grow-shrink 1s forwards ease infinite; }
 
 @keyframes grow-shrink {
   50% {
@@ -372,10 +429,6 @@ html {
 .player-stats {
   display: flex;
   font-size: 3rem;
-  position: absolute;
-  top: 13%;
-  left: 33%;
-  right: 50%;
   width: 100%;
   margin-bottom: 2.3rem; }
   .player-stats__ul {
@@ -384,11 +437,15 @@ html {
     text-align: center;
     padding-top: 4.3rem;
     padding-bottom: 4.3rem;
-    line-height: 1.8; }
+    line-height: 1.8;
+    position: absolute;
+    top: 17%;
+    left: 33%;
+    right: 50%; }
 
 .player-stats-display {
   z-index: -1;
-  opacity: 0; }
+  display: none; }
 
 .player-status {
   width: 50%;
@@ -402,6 +459,18 @@ html {
   .player-status__combat-info {
     font-size: 3.4rem;
     margin-bottom: 3rem; }
+
+.player-history-box {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 11rem;
+  border: 1rem solid black;
+  width: 45%;
+  left: 26%;
+  height: 47vh;
+  text-align: left;
+  overflow: auto;
+  line-height: 1.2; }
 
 .title__header {
   font-size: 6.2rem;

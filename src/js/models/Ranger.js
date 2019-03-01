@@ -1,5 +1,4 @@
 import Player from './Player';
-console.log('Ranger model working');
 
 export default class Ranger extends Player {
     constructor(name, specialty) {

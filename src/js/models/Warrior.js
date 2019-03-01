@@ -1,12 +1,12 @@
 import Player from './Player';
-console.log('Warrior model working...');
+import Monster from './Monster';
 
 export default class Warrior extends Player {
     constructor(name, specialty) {
         super(name, specialty);
         this.skillResource = 'Rage';
         this.skillResourceNumber = 10;
-        this.stats.strength = 7;
+        this.stats.strength = 11;
         this.stats.magic = 3;
         this.stats.defense = 5;
         this.stats.dexterity = 4;
@@ -44,4 +44,15 @@ export default class Warrior extends Player {
             }
         ];
     }
+
+    attack() {
+        const randomNumber = Math.floor(Math.random() * 50) + 1;
+        // const attackDamage = Math.round(this.stats.strength * .29);
+        const attackDamage = Math.round(randomNumber * .30);
+        return attackDamage;
+       
+    };
+
+
+
 }
